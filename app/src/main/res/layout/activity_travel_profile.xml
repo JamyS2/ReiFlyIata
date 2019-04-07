@@ -14,7 +14,7 @@
             android:id="@+id/dreamView5"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/amsterdam"
             tools:layout_editor_absoluteX="212dp"
             tools:layout_editor_absoluteY="369dp" />
 
@@ -22,7 +22,7 @@
             android:id="@+id/dreamView3"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/new_york"
             tools:layout_editor_absoluteX="212dp"
             tools:layout_editor_absoluteY="524dp" />
 
@@ -130,7 +130,7 @@
             android:id="@+id/dreamView"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/rome"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="248dp" />
 
@@ -138,7 +138,7 @@
             android:id="@+id/dreamView4"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/paris"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="369dp" />
 
@@ -146,7 +146,7 @@
             android:id="@+id/dreamView2"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/bali"
             tools:layout_editor_absoluteX="212dp"
             tools:layout_editor_absoluteY="248dp" />
 
@@ -162,7 +162,7 @@
             android:id="@+id/imageView4"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/tokyo"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="524dp" />
 
@@ -170,7 +170,7 @@
             android:id="@+id/imageView"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/oahu"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="676dp" />
 
@@ -178,7 +178,7 @@
             android:id="@+id/imageView3"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/taipei"
             tools:layout_editor_absoluteX="212dp"
             tools:layout_editor_absoluteY="676dp" />
 
