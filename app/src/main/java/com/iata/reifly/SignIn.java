@@ -19,7 +19,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -34,7 +33,6 @@ public class SignIn extends AppCompatActivity {
     private EditText inputEmail, inputPassword;
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
-    SignInButton button;
     private final static int RC_SIGN_IN = 123;
     GoogleSignInClient mGoogleSignInClient;
     FirebaseAuth.AuthStateListener mAuthListner;
@@ -51,7 +49,7 @@ public class SignIn extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         //check the current user
         if (mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(SignIn.this, HomeScreen.class));
+            startActivity(new Intent(SignIn.this, LetsConnect.class));
             finish();
         }
         setContentView(R.layout.activity_sign_in);
@@ -59,19 +57,9 @@ public class SignIn extends AppCompatActivity {
         inputPassword = (EditText) findViewById(R.id.password);
         Button ahlogin = (Button) findViewById(R.id.ah_login);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        TextView forgot = (TextView) findViewById(R.id.forgot);
-        button = (SignInButton) findViewById(R.id.sign_in_google);
-        SpannableString content = new SpannableString("Content");
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
-        forgot.setText(content);
+        TextView signUp = (TextView) findViewById(R.id.sign_up);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-            }
-        });
-        forgot.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SignIn.this, SignUpActivity.class));
@@ -102,7 +90,7 @@ public class SignIn extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     // there was an error
                                     Log.d(TAG, "signInWithEmail:success");
-                                    Intent intent = new Intent(SignIn.this, HomeScreen.class);
+                                    Intent intent = new Intent(SignIn.this, LetsConnect.class);
                                     startActivity(intent);
                                     finish();
                                 } else {
@@ -117,7 +105,7 @@ public class SignIn extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(SignIn.this, HomeScreen.class));
+                    startActivity(new Intent(SignIn.this, LetsConnect.class));
                 }
             }
         };
@@ -126,11 +114,6 @@ public class SignIn extends AppCompatActivity {
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-    }
-
-    private void signIn() {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 
     @Override
