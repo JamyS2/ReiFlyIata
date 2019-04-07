@@ -2,10 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@android:color/white"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".TravelProfile">
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,25 +16,34 @@
             android:id="@+id/dreamView5"
             android:layout_width="164dp"
             android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/amsterdam"
-            tools:layout_editor_absoluteX="212dp"
             tools:layout_editor_absoluteY="369dp" />
 
         <ImageView
             android:id="@+id/dreamView3"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/new_york"
-            tools:layout_editor_absoluteX="212dp"
-            tools:layout_editor_absoluteY="524dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/dreamView5"
+            app:srcCompat="@drawable/new_york" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Set up your travel profile"
-            android:textSize="30dp"
             android:textColor="@android:color/black"
+            android:textSize="30dp"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="25dp" />
 
@@ -130,9 +141,12 @@
             android:id="@+id/dreamView"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/rome"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="248dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/dreamView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/rome" />
 
         <ImageView
             android:id="@+id/dreamView4"
@@ -140,47 +154,59 @@
             android:layout_height="100dp"
             app:srcCompat="@drawable/paris"
             tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="369dp" />
+            tools:layout_editor_absoluteY="369dp"
+            />
 
         <ImageView
             android:id="@+id/dreamView2"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/bali"
-            tools:layout_editor_absoluteX="212dp"
-            tools:layout_editor_absoluteY="248dp" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="164dp"
-            android:layout_height="100dp"
-            app:srcCompat="@drawable/profile"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="524dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/dreamView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dreamView"
+            app:srcCompat="@drawable/bali" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/tokyo"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="524dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="72dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dreamView4"
+            app:srcCompat="@drawable/tokyo" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/oahu"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="676dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:srcCompat="@drawable/oahu" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="164dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/taipei"
-            tools:layout_editor_absoluteX="212dp"
-            tools:layout_editor_absoluteY="676dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.431"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/dreamView3"
+            app:srcCompat="@drawable/taipei" />
 
         <Switch
             android:id="@+id/switch1"
@@ -195,25 +221,38 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/delta"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="817dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/delta" />
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/american_airlines"
-            tools:layout_editor_absoluteX="151dp"
-            tools:layout_editor_absoluteY="816dp" />
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/american_airlines" />
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="106dp"
             android:layout_height="41dp"
-            app:srcCompat="@drawable/virgin_america"
-            tools:layout_editor_absoluteX="268dp"
-            tools:layout_editor_absoluteY="816dp" />
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/virgin_america" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

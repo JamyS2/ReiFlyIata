@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amritsar to Shenzhan"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/price"/>
+        <TextView
+            android:id="@+id/timings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12.00-12.00, 24th Oct"
+            android:layout_below="@id/title"
+            android:paddingLeft="8dp"
+            android:layout_toLeftOf="@+id/direct"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 140"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/direct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direct"
+            android:layout_alignTop="@+id/timings"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/price"
+            android:paddingRight="8dp"
+            android:textColor="@color/green"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

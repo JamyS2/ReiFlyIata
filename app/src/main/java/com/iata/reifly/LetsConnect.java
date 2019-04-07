@@ -24,7 +24,7 @@ public class LetsConnect extends AppCompatActivity {
         continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LetsConnect.this, TravelProfile.class));
+                startActivity(new Intent(LetsConnect.this, HomeScreen.class));
             }
         });
         Spinner dropdown = (Spinner) findViewById(R.id.spinner1);
