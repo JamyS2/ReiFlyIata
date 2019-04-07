@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Route implements Serializable {
 
-    String start, end, start_wait, end_wait, dep_time, arrival_time, flight_number, baggage_allowence;
+    String start, end, start_wait, end_wait, dep_time, arrival_time, flight_number, baggage_allowance;
 
     public Route() {
 
@@ -30,12 +30,12 @@ public class Route implements Serializable {
         return dep_time;
     }
 
-    public String getBaggage_allowence() {
-        return baggage_allowence;
+    public String getBaggage_allowance() {
+        return baggage_allowance;
     }
 
-    public void setBaggage_allowence(String baggage_allowence) {
-        this.baggage_allowence = baggage_allowence;
+    public void setBaggage_allowance(String baggage_allowance) {
+        this.baggage_allowance = baggage_allowance;
     }
 
     public String getArrival_time() {

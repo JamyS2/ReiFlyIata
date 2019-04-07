@@ -46,7 +46,7 @@ public class OffersListAdapter extends RecyclerView.Adapter<OffersListAdapter.Of
             }
             offerViewHolder.direct.setTextColor(ContextCompat.getColor(mContext, R.color.red));
         }
-        offerViewHolder.timings.setText("Delta Airlines, Baggage: "+offer.route.get(0).baggage_allowence);
+        offerViewHolder.timings.setText("Delta Airlines, Baggage: "+offer.route.get(0).baggage_allowance);
     }
 
     @Override

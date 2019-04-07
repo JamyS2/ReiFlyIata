@@ -7,6 +7,7 @@ public class ApiResponse {
 
     }
     ArrayList<Offer> offers;
+    ArrayList<SearchData> searchData;
 
     public ArrayList<Offer> getOffers() {
         return offers;
@@ -14,5 +15,13 @@ public class ApiResponse {
 
     public void setOffers(ArrayList<Offer> offers) {
         this.offers = offers;
+    }
+
+    public ArrayList<SearchData> getSearchData() {
+        return searchData;
+    }
+
+    public void setSearchData(ArrayList<SearchData> searchData) {
+        this.searchData = searchData;
     }
 }

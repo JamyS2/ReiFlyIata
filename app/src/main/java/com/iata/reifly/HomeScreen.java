@@ -214,6 +214,7 @@ public class HomeScreen extends AppCompatActivity {
             if (cursor.getString(1).startsWith("Flight")) {
                 String name = "Event" + cursor.getInt(0) + ": \nTitle: " + cursor.getString(1) + "\nStart Date: " + new Date(cursor.getLong(3)) + "\nEnd Date : " + new Date(cursor.getLong(4)) + "\nLocation : " + cursor.getString(5);
              //   textView.append(name+"\n\n");
+                System.out.println("this: " + name);
             }
             cursor.moveToNext();
         }
